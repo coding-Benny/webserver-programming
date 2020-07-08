@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>게시판 회원가입</title>
+<link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body bgcolor="#FFFFFF">
+<div align=center>
+<h2>게시판 : 회원가입</h2>
+<hr>
+<form method="post" action="board_register.jsp" name="register">
+<input type="hidden" name="action" value="join">
+<div class="form-group">
+    <label for="accountId" class="col-sm-1">아이디</label>
+    <input type="text" class="form-control col-sm-2" id="userid" name="userid" aria-describedby="userid">
+  </div>
+  <div class="form-group">
+    <label for="accountPasswd" class="col-sm-1">비밀번호</label>
+    <input type="password" class="form-control col-sm-2" id="passwd" name="passwd">
+  </div>
+  <input type="submit" class="btn btn-primary" value="회원가입">
+  <input type="reset" class="btn btn-secondary" value="초기화">
+</form>
+</div>
+</body>
+</html>
